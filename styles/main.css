@@ -29,7 +29,7 @@ html{
 }
 
 .logo{
-    margin: -20px 15px;
+    margin: -10px 15px;
 }
 
 .slogan{
@@ -88,38 +88,60 @@ html{
 }
 
 .line {
-    margin-top: 10px;
+    margin: -10px 0px 30px;
     border-bottom: 2px solid #8C8079;
 }
 
-.title {
-    font-size: 300%;
-    margin: -10px -30px 20px 45px;
-    color: #595959;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-stretch: condensed;
-}
 
 .we{
     margin: -3px -100px 20px 35px;
     background-color: #8C8079;
+    border-radius: 20px;
     height: 100%;
     width: 95%;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 500;
+    background-size: cover;
 }
 
 .we h2{
     color: #262626;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 900;
+    background-size: cover;
+    font-size: 222%;
 }
 
 
 .pleasure{
     margin: -3px -100px 20px 35px;
     background-color: #8C8079;
+    border-radius: 20px;
     height: 100%;
     width: 95%;
+    list-style-type: none;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 500;
+    background-size: cover;
+}
+
+.pleasure h2{
+    color: #262626;
+    font-style: normal;
+    font-family: DejaVu Sans Mono, monospace;
+    font-weight: 560;
+    background-size: cover;
+    font-size: 222%;
+}
+
+
+.pleasure ul{
+    list-style-type: none;
+}
+
+.pleasure ol{
+    list-style-type: none;
 }
 
 .pleasure h2{
@@ -129,29 +151,89 @@ html{
 }
 
 
-.achivements{
+.achievements{
     margin: -3px -100px 20px 35px;
     background-color: #8C8079;
+    border-radius: 20px;
     height: 100%;
     width: 95%;
 }
 
-.achivements h2{
+.achievements ol{
+    list-style-type: none;
+}
+.achievements h2{
     color: #262626;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
 
-aside{
-    float: right;
+.help{
+    float:right;
+    margin-right: 50px;
+    margin-top: 15px;
 }
 
-.help{
-   float:right;
-}
 
 footer ul{
     float: left;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+footer h3{
+    margin:  -5px 0px 9px 20px;
+    font-size: 18px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+
+    margin-left: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #8C8079;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #595959;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #262626;
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #BFB6B0;
+        &:before {
+            width: 100%;
+        }
+    }
 }
 
 .address img{
@@ -170,4 +252,11 @@ footer ul{
     margin: 10px 0px -7px 0px;
     width: 30px;
     height: 30px;
+}
+
+footer span{
+    font-weight: 460;
+    color: #262626;
+    text-decoration: none;
+
 }
