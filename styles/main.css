@@ -93,24 +93,56 @@ html{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .we{
-    margin: -3px -100px 20px 35px;
-    background-color: #8C8079;
+    margin-left: 35px;
+    margin-right: -100px;
+    width: 97%;
+    color: #262626;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 700;
+    background-size: cover;
+    margin-bottom: 30px;
+
+}
+
+h2{
+    color: #595959;
+    text-shadow: 5px 3px 13px  #595959;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 780;
+    background-size: cover;
+    font-size: 180%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.pleasure h2{
+    -webkit-text-stroke: 0.5px #262626;
+}
+.center{
+    border: 5px solid #8C8079;
     border-radius: 20px;
     height: 100%;
     width: 95%;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 500;
-    background-size: cover;
-}
-
-.we h2{
-    color: #262626;
-    font-style: normal;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 900;
-    background-size: cover;
-    font-size: 222%;
+    font-size: 100%;
+    margin-right: -100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: justify;
 }
 
 
@@ -121,57 +153,72 @@ html{
     height: 100%;
     width: 95%;
     list-style-type: none;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 500;
-    background-size: cover;
 }
 
-.pleasure h2{
+.pleasure li{
+    background-size: cover;
+    text-align: justify;
+    line-height: 1.2;
+    margin-left: 20px;
+    margin-bottom: 10px;
     color: #262626;
-    font-style: normal;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 560;
-    background-size: cover;
-    font-size: 222%;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 700;
 }
-
 
 .pleasure ul{
     list-style-type: none;
 }
 
 .pleasure ol{
-    list-style-type: none;
+    margin-left: 40px;
+    text-align: justify;
+    margin-right: 25px;
 }
 
-.pleasure h2{
-    color: #262626;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-}
 
+#sidebar {
+    background-color: #8C8079;
+    border-radius: 20px ;
+    width: 20%;
+    height: 40%;
+    text-align: justify;
+    margin: 15px 110px 5px 1170px;
+}
 
 .achievements{
-    margin: -3px -100px 20px 35px;
-    background-color: #8C8079;
-    border-radius: 20px;
-    height: 100%;
-    width: 95%;
+    margin-left: 30px;
+    margin-top: -30px;
+    margin-bottom: 40px;
 }
-
 .achievements ol{
     list-style-type: none;
 }
-.achievements h2{
-    color: #262626;
+
+
+
+
+
+
+
+
+
+footer h3{
+    color: #595959;
+    text-shadow: 5px 3px 13px  #595959;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    font-weight: 980;
+    background-size: cover;
+    font-size: 80%;
 }
 
 .help{
     float:right;
     margin-right: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 
@@ -185,6 +232,7 @@ footer h3{
     margin:  -5px 0px 9px 20px;
     font-size: 18px;
 }
+
 
 .button {
     font-family: 'Montserrat', sans-serif;
