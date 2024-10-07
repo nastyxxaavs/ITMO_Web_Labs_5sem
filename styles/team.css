@@ -96,7 +96,8 @@ main h1{
     font-size: 250%;
     text-align: center;
     color: #595959;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Courier New, monospace;
+    font-weight: 1080;
     font-style: normal;
     margin: 0px -10px 0px 160px;
     text-shadow: #8C8079 2px 2px 3px;

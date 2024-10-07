@@ -93,98 +93,58 @@ html{
 }
 
 
-.we{
-    margin: -3px -100px 20px 35px;
-    background-color: #8C8079;
-    border-radius: 20px;
-    height: 100%;
-    width: 95%;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 500;
-    background-size: cover;
+
+.selo{
+    margin-bottom: 40px;
 }
 
-.we h2{
-    color: #262626;
+h2{
+    color: #595959;
+    text-shadow: #595959 2px 2px 3px;
+    font-family: Courier New, monospace;
     font-style: normal;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 900;
+    font-weight: 1080;
     background-size: cover;
-    font-size: 222%;
+    font-size: 180%;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 
-.pleasure{
-    margin: -3px -100px 20px 35px;
-    background-color: #8C8079;
-    border-radius: 20px;
-    height: 100%;
-    width: 95%;
-    list-style-type: none;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 500;
-    background-size: cover;
-}
-
-.pleasure h2{
-    color: #262626;
-    font-style: normal;
-    font-family: DejaVu Sans Mono, monospace;
-    font-weight: 560;
-    background-size: cover;
-    font-size: 222%;
-}
 
 
-.pleasure ul{
-    list-style-type: none;
-}
 
-.pleasure ol{
-    list-style-type: none;
-}
-
-.pleasure h2{
-    color: #262626;
+footer h3{
+    color: #595959;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-}
-
-
-.achievements{
-    margin: -3px -100px 20px 35px;
-    background-color: #8C8079;
-    border-radius: 20px;
-    height: 100%;
-    width: 95%;
-}
-
-.achievements ol{
-    list-style-type: none;
-}
-.achievements h2{
-    color: #262626;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    font-weight: 880;
+    background-size: cover;
+    font-size: 90%;
 }
 
 .help{
     float:right;
-    margin-right: 50px;
-    margin-top: 15px;
+    margin-right: 60px;
+    margin-top: 55px;
 }
 
+.help h3{
+    margin:  -10px 0px 9px 15px;
+}
 
 footer ul{
     float: left;
-    margin-left: 10px;
+    margin-left: 15px;
     list-style-type: none;
 }
 
 footer h3{
-    margin:  -5px 0px 9px 20px;
+    margin:  -3px 0px 10px 40px;
     font-size: 18px;
+    text-shadow: #595959 1px 1px 1px;
 }
+
 
 .button {
     font-family: 'Montserrat', sans-serif;
@@ -236,27 +196,42 @@ footer h3{
     }
 }
 
+ul span{
+    margin-left: 10px;
+}
 .address img{
-    margin: 0px 0px -3px 0px;
+    margin: 0px 0px -10px 10px;
     width: 30px;
     height: 30px;
 }
+
+
+.address a{
+    text-decoration: none;
+}
+
 
 .phone img{
-    margin: 10px 0px -7px 0px;
+    margin: 20px 0px -10px 10px;
     width: 30px;
     height: 30px;
 }
 
+
 .email img{
-    margin: 10px 0px -7px 0px;
+    margin: 25px 0px -10px 10px;
     width: 30px;
     height: 30px;
+}
+
+.email a{
+    text-decoration: none;
 }
 
 footer span{
-    font-weight: 460;
-    color: #262626;
+    font-family: Courier New, monospace;
+    font-weight: 600;
+    color: #474747;
     text-decoration: none;
-
 }
+

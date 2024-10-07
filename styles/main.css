@@ -97,21 +97,14 @@ html{
 
 
 
-
-
-
-
-
-
 .we{
-    margin-left: 35px;
-    margin-right: -100px;
-    width: 97%;
+    margin-left: 37px;
+    width: 95%;
     color: #262626;
-    font-family: Arial Narrow, sans-serif;
+    font-family: Courier New, monospace;
     font-size: 20px;
     font-stretch: ultra-expanded;
-    font-weight: 700;
+    font-weight: 500;
     background-size: cover;
     margin-bottom: 30px;
 
@@ -119,10 +112,10 @@ html{
 
 h2{
     color: #595959;
-    text-shadow: 5px 3px 13px  #595959;
-    font-family: 'Montserrat', sans-serif;
+    text-shadow: #595959 2px 2px 3px;
+    font-family: Courier New, monospace;
     font-style: normal;
-    font-weight: 780;
+    font-weight: 1080;
     background-size: cover;
     font-size: 180%;
     margin-left: 20px;
@@ -130,7 +123,7 @@ h2{
 }
 
 .pleasure h2{
-    -webkit-text-stroke: 0.5px #262626;
+    color: #4a4a4a;
 }
 .center{
     border: 5px solid #8C8079;
@@ -138,21 +131,23 @@ h2{
     height: 100%;
     width: 95%;
     font-size: 100%;
-    margin-right: -100px;
+    margin-right: -200px;
     margin-left: 10px;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.6;
     text-align: justify;
+    padding: 15px 20px;
 }
 
 
 .pleasure{
-    margin: -3px -100px 20px 35px;
+    margin: -3px -100px 20px 40px;
     background-color: #8C8079;
     border-radius: 20px;
     height: 100%;
-    width: 95%;
+    width: 92%;
     list-style-type: none;
+    padding: 15px 20px;
 }
 
 .pleasure li{
@@ -162,10 +157,10 @@ h2{
     margin-left: 20px;
     margin-bottom: 10px;
     color: #262626;
-    font-family: Arial Narrow, sans-serif;
+    font-family: Courier New, monospace;
     font-size: 20px;
     font-stretch: ultra-expanded;
-    font-weight: 700;
+    font-weight: 550;
 }
 
 .pleasure ul{
@@ -181,17 +176,33 @@ h2{
 
 #sidebar {
     background-color: #8C8079;
+    font-family: Times, Times New Roman, serif;
+    font-style: italic;
+    font-size: 18px;
+    font-stretch: ultra-expanded;
+    font-weight: 300;
     border-radius: 20px ;
-    width: 20%;
+    width: 18%;
     height: 40%;
     text-align: justify;
-    margin: 15px 110px 5px 1170px;
+    margin: 15px -110px 5px 1170px;
+    padding: 15px 20px;
 }
 
+#sidebar cite{
+    padding-left: 150px;
+    font-weight: 600;
+}
 .achievements{
-    margin-left: 30px;
     margin-top: -30px;
     margin-bottom: 40px;
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 550;
 }
 .achievements ol{
     list-style-type: none;
@@ -201,36 +212,35 @@ h2{
 
 
 
-
-
-
-
 footer h3{
     color: #595959;
-    text-shadow: 5px 3px 13px  #595959;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 980;
+    font-weight: 880;
     background-size: cover;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .help{
     float:right;
-    margin-right: 50px;
-    margin-top: 10px;
+    margin-right: 60px;
+    margin-top: 55px;
 }
 
+.help h3{
+    margin:  -10px 0px 9px 15px;
+}
 
 footer ul{
     float: left;
-    margin-left: 10px;
+    margin-left: 15px;
     list-style-type: none;
 }
 
 footer h3{
-    margin:  -5px 0px 9px 20px;
+    margin:  -3px 0px 10px 40px;
     font-size: 18px;
+    text-shadow: #595959 1px 1px 1px;
 }
 
 
@@ -284,27 +294,43 @@ footer h3{
     }
 }
 
+ul span{
+    margin-left: 10px;
+   height: 100%;
+}
 .address img{
-    margin: 0px 0px -3px 0px;
+    margin: 0px 0px -10px 10px;
     width: 30px;
     height: 30px;
 }
+
+
+.address a{
+    text-decoration: none;
+}
+
 
 .phone img{
-    margin: 10px 0px -7px 0px;
+    margin: 20px 0px -10px 10px;
     width: 30px;
     height: 30px;
 }
 
+
 .email img{
-    margin: 10px 0px -7px 0px;
+    margin: 25px 0px -10px 10px;
     width: 30px;
     height: 30px;
+}
+
+.email a{
+    text-decoration: none;
 }
 
 footer span{
-    font-weight: 460;
-    color: #262626;
+    font-family: Courier New, monospace;
+    font-weight: 600;
+    color: #474747;
     text-decoration: none;
-
 }
+
