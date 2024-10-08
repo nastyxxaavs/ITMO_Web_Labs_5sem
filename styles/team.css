@@ -12,14 +12,6 @@ html{
     color: #262626;
 }
 
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
-}
-@supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-}
-
 .link {
     text-decoration: none;
 }
@@ -40,29 +32,6 @@ html{
     padding-top: 10%;
     text-align: center;
     color: #8C8079;
-}
-
-.menu {
-    margin: -320px -10px 180px 1330px;
-    list-style-type: none;
-    padding: 0;
-    width: 140px;
-    line-height: 45px;
-
-    text-decoration: none;
-    display: inline-block;
-    height: 45px;
-    border-radius: 45px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: #595959;
-    box-shadow: 0 8px 15px ;
-    transition: .3s;
 }
 
 .menu:hover {

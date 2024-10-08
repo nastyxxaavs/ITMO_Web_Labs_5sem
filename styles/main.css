@@ -12,13 +12,6 @@ html{
     color: #262626;
 }
 
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
-}
-@supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-}
 
 .link {
     text-decoration: none;
@@ -40,29 +33,6 @@ html{
     padding-top: 10%;
     text-align: center;
     color: #8C8079;
-}
-
-.menu {
-    margin: -320px -10px 180px 1330px;
-    list-style-type: none;
-    padding: 0;
-    width: 140px;
-    line-height: 45px;
-
-    text-decoration: none;
-    display: inline-block;
-    height: 45px;
-    border-radius: 45px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: #595959;
-    box-shadow: 0 8px 15px ;
-    transition: .3s;
 }
 
 .menu:hover {
@@ -124,19 +94,6 @@ h2{
 
 .pleasure h2{
     color: #4a4a4a;
-}
-.center{
-    border: 5px solid #8C8079;
-    border-radius: 20px;
-    height: 100%;
-    width: 95%;
-    font-size: 100%;
-    margin-right: -200px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    text-align: justify;
-    padding: 15px 20px;
 }
 
 
@@ -241,57 +198,6 @@ footer h3{
     margin:  -3px 0px 10px 40px;
     font-size: 18px;
     text-shadow: #595959 1px 1px 1px;
-}
-
-
-.button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-
-    margin-left: 40px;
-    margin-top: 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #8C8079;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #595959;
-        border-radius: 10rem;
-        z-index: -2;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: #262626;
-        transition: all .3s;
-        border-radius: 10rem;
-        z-index: -1;
-    }
-    &:hover {
-        color: #BFB6B0;
-        &:before {
-            width: 100%;
-        }
-    }
 }
 
 ul span{

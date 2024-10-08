@@ -12,14 +12,6 @@ html{
     color: #262626;
 }
 
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
-}
-@supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-}
-
 .link {
     text-decoration: none;
 }
@@ -40,29 +32,6 @@ html{
     padding-top: 10%;
     text-align: center;
     color: #8C8079;
-}
-
-.menu {
-    margin: -320px -10px 180px 1330px;
-    list-style-type: none;
-    padding: 0;
-    width: 140px;
-    line-height: 45px;
-
-    text-decoration: none;
-    display: inline-block;
-    height: 45px;
-    border-radius: 45px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: #595959;
-    box-shadow: 0 8px 15px ;
-    transition: .3s;
 }
 
 .menu:hover {
@@ -94,25 +63,158 @@ html{
 
 
 
-.selo{
-    margin-bottom: 40px;
-}
-
-h2{
+main h1{
     color: #595959;
     text-shadow: #595959 2px 2px 3px;
     font-family: Courier New, monospace;
     font-style: normal;
     font-weight: 1080;
     background-size: cover;
-    font-size: 180%;
-    margin-left: 20px;
+    font-size: 250%;
+    margin-left: 50px;
     margin-bottom: 10px;
 }
 
 
 
+h2{
+    color: #595959;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    font-size: 120%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-top:15px;
+    padding-bottom: -3px;
+}
 
+.in{
+    color: #424242;
+    margin-bottom: -15px;
+}
+
+.out{
+    color: #454545;
+    font-size: 120%;
+}
+
+.litigation{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-color: #8C8079;
+    border-radius: 20px;
+
+}
+
+.customs{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+
+.industry{
+    background-color: #8C8079;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.industries{
+    list-style-type: none;
+}
+
+.industry h3{
+    color: #b3a7a3;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.industry img{
+    width: 10%;
+    height: 10%;
+    color: #262626;
+    margin-top: -90px;
+    padding-left: 647px;
+}
+
+.left{
+   padding-left: 80px;
+    padding-top: 45px;
+}
+
+.right{
+    padding-left: 1000px;
+    padding-bottom: 76px;
+    margin-top: -130px;
+}
+
+
+.job{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.contracts{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-color: #8C8079;
+    border-radius: 20px;
+}
+
+.business{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.farming{
+    margin-left: 37px;
+    width: 95%;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    background-size: cover;
+    background-color: #8C8079;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
 
 footer h3{
     color: #595959;
@@ -145,56 +247,6 @@ footer h3{
     text-shadow: #595959 1px 1px 1px;
 }
 
-
-.button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-
-    margin-left: 40px;
-    margin-top: 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #8C8079;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #595959;
-        border-radius: 10rem;
-        z-index: -2;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: #262626;
-        transition: all .3s;
-        border-radius: 10rem;
-        z-index: -1;
-    }
-    &:hover {
-        color: #BFB6B0;
-        &:before {
-            width: 100%;
-        }
-    }
-}
 
 ul span{
     margin-left: 10px;
