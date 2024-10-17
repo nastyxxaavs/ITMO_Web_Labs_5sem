@@ -12,7 +12,13 @@ html{
     color: #262626;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .link {
+    margin-top: 100px;
     text-decoration: none;
 }
 
@@ -20,16 +26,12 @@ html{
     position: relative;
 }
 
-.logo{
-    margin: -10px 15px;
-}
 
 .slogan{
-    margin: -320px 10px 30px;
     position: relative;
-    font-size: 320%;
+    font-size: 26px;
     text-shadow: 5px 3px 13px #8C8079;
-    padding-top: 10%;
+    top: 90px;
     text-align: center;
     color: #8C8079;
 }
@@ -42,9 +44,12 @@ html{
 }
 
 .li {
-    margin: -1800px -10px 180px 1330px;
     display: block;
     padding: 10px;
+}
+
+.menu li{
+    list-style-type: none;
 }
 
 .menu li a {
@@ -57,10 +62,8 @@ html{
 }
 
 .line {
-    margin: -10px 0px 30px;
     border-bottom: 2px solid #8C8079;
 }
-
 
 
 main h1{
@@ -232,7 +235,7 @@ footer h3{
 }
 
 .help h3{
-    margin:  -10px 0px 9px 15px;
+    margin:  -10px 0 9px 15px;
 }
 
 footer ul{
@@ -242,7 +245,7 @@ footer ul{
 }
 
 footer h3{
-    margin:  -3px 0px 10px 40px;
+    margin:  -3px 0 10px 40px;
     font-size: 18px;
     text-shadow: #595959 1px 1px 1px;
 }
@@ -252,7 +255,7 @@ ul span{
     margin-left: 10px;
 }
 .address img{
-    margin: 0px 0px -10px 10px;
+    margin: 0 0 -10px 10px;
     width: 30px;
     height: 30px;
 }
@@ -264,14 +267,14 @@ ul span{
 
 
 .phone img{
-    margin: 20px 0px -10px 10px;
+    margin: 20px 0 -10px 10px;
     width: 30px;
     height: 30px;
 }
 
 
 .email img{
-    margin: 25px 0px -10px 10px;
+    margin: 25px 0 -10px 10px;
     width: 30px;
     height: 30px;
 }
