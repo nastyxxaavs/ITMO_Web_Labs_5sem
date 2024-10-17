@@ -1,10 +1,11 @@
 .menu {
-    margin: -320px -10px 180px 1330px;
     list-style-type: none;
     padding: 0;
     width: 140px;
     line-height: 45px;
-
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 60px;
     text-decoration: none;
     display: inline-block;
     height: 45px;
@@ -72,7 +73,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 0%;
+        width: 0;
         height: 100%;
         background-color: #262626;
         transition: all .3s;
