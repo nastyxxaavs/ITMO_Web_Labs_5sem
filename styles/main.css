@@ -94,7 +94,7 @@ h2{
     font-style: normal;
     font-weight: 1080;
     background-size: cover;
-    font-size: 180%;
+    font-size: 34px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
@@ -207,7 +207,7 @@ footer h3{
     flex-direction: column;
     align-content: space-around;
     float: left;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 footer li{
