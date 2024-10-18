@@ -22,11 +22,6 @@ header{
     text-decoration: none;
 }
 
-.container{
-    position: relative;
-}
-
-
 .slogan{
     position: relative;
     font-size: 26px;
@@ -66,6 +61,16 @@ header{
 }
 
 
+
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
 main h1{
     color: #595959;
     text-shadow: #595959 2px 2px 3px;
@@ -76,6 +81,7 @@ main h1{
     font-size: 250%;
     margin-left: 50px;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 
@@ -87,15 +93,14 @@ h2{
     font-weight: 1080;
     background-size: cover;
     font-size: 120%;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    padding-top:15px;
-    padding-bottom: -3px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 15px;
 }
 
 .in{
     color: #424242;
-    margin-bottom: -15px;
+    margin-top: 10px;
 }
 
 .out{
@@ -139,11 +144,16 @@ h2{
 
 .industries{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .industry h3{
     color: #b3a7a3;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -151,19 +161,17 @@ h2{
     width: 10%;
     height: 10%;
     color: #262626;
-    margin-top: -90px;
-    padding-left: 647px;
+    margin-left: 90px;
 }
 
 .left{
-   padding-left: 80px;
-    padding-top: 45px;
+   padding-left: 90px;
+    padding-top: 10px;
 }
 
 .right{
-    padding-left: 1000px;
-    padding-bottom: 76px;
-    margin-top: -130px;
+    padding-right: 50px;
+    padding-top: 10px;
 }
 
 
@@ -219,71 +227,113 @@ h2{
     margin-bottom: 40px;
 }
 
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 footer h3{
     color: #595959;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 880;
     background-size: cover;
-    font-size: 90%;
+    font-size: 18px;
+    text-shadow: #595959 1px 1px 1px;
 }
 
 .help{
     float:right;
     margin-right: 60px;
     margin-top: 55px;
+    margin-bottom: 30px;
 }
 
 .help h3{
-    margin:  -10px 0 9px 15px;
+    margin-left: 10px;
 }
 
-footer ul{
+.contacts h3{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     float: left;
     margin-left: 15px;
+}
+
+footer li{
     list-style-type: none;
 }
 
-footer h3{
-    margin:  -3px 0 10px 40px;
-    font-size: 18px;
-    text-shadow: #595959 1px 1px 1px;
-}
-
-
-ul span{
-    margin-left: 10px;
-}
-.address img{
-    margin: 0 0 -10px 10px;
+footer img{
     width: 30px;
     height: 30px;
 }
 
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.address img{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.address li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
 
 .address a{
     text-decoration: none;
 }
 
+.phone{
+    display: flex;
+    flex-direction: row;
+}
 
 .phone img{
-    margin: 20px 0 -10px 10px;
-    width: 30px;
-    height: 30px;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
 
+.phone li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+}
 
 .email img{
-    margin: 25px 0 -10px 10px;
-    width: 30px;
-    height: 30px;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
+
+.email li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
 
 .email a{
     text-decoration: none;
 }
 
-footer span{
+footer li{
     font-family: Courier New, monospace;
     font-weight: 600;
     color: #474747;

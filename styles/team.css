@@ -15,6 +15,7 @@ html{
 header{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .link {
@@ -111,6 +112,8 @@ main ul{
 }
 
 .left{
+    display: flex;
+    flex-direction: column;
     background-color: #8C8079;
     border-radius: 20px;
     font-family: Arial Narrow, sans-serif
@@ -118,6 +121,8 @@ main ul{
 }
 
 .right{
+    display: flex;
+    flex-direction: column;
     background-color: #8C8079;
     border-radius: 20px;
     font-family: Arial Narrow, sans-serif;
