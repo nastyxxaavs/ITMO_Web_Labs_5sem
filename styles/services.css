@@ -109,8 +109,8 @@ h2{
 }
 
 .litigation{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -124,8 +124,8 @@ h2{
 }
 
 .customs{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -176,8 +176,8 @@ h2{
 
 
 .job{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -188,8 +188,8 @@ h2{
 }
 
 .contracts{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -202,8 +202,8 @@ h2{
 }
 
 .business{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -214,8 +214,8 @@ h2{
 }
 
 .farming{
-    margin-left: 37px;
-    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     color: #262626;
     font-family: Courier New, monospace;
     font-size: 20px;
@@ -338,5 +338,175 @@ footer li{
     font-weight: 600;
     color: #474747;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px){
+
+    .line{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+    .menu ul{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+    .menu li{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+
+    .menu a{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+
+
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+
+    main h1{
+        font-size:20px;
+    }
+    main h2 {
+        font-size: 15px;
+    }
+
+    main h3 {
+        font-size: 10px;
+    }
+
+    .industry{
+        display: none;
+    }
+
+    .contacts{
+        font-size: 12px;
+    }
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
+    }
+
+    .help{
+        display: none;
+    }
+
+    main p {
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .help{
+        display: none;
+    }
+
+    .industry {
+        display: none;
+    }
+
+    main h1{
+        font-size:30px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+
+    main h3 {
+        font-size: 15px;
+    }
+
+
+    .contacts{
+        font-size: 14px;
+    }
+
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .slogan {
+        display: none;
+    }
+
+    #sidebar{
+        display: none;
+    }
+    .industry img{
+        display: none;
+    }
+
+
+    .help h3{
+        margin-left: 65px;
+        font-size: 16px;
+    }
+
+
+    .contacts h3{
+        font-size: 16px;
+    }
+
+
+    .contacts{
+        font-size: 14px;
+    }
+
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
+    }
+
+
 }
 
