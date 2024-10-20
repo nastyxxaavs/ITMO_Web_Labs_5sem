@@ -181,8 +181,116 @@ th:nth-child(3), td:nth-child(3) {
     background-color: #8C8079;
 }
 
+@media screen and (max-width: 500px){
 
-@media screen and (max-width: 600px) {
+    .menu{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+    .menu ul{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+     .menu li{
+         display: none;
+         outline: none;
+         border: 0;
+         background: transparent;
+     }
+
+     .menu a{
+         display: none;
+         outline: none;
+         border: 0;
+         background: transparent;
+     }
+
+
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    main h1 {
+        font-size: 35px;
+        text-align: center;
+        margin: 10px 10px 20px;
+        text-shadow: #8C8079 1px 1px 2px;
+    }
+
+
+    .box img {
+        width: 80%;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+
+    .left{
+        margin-right: 3px;
+    }
+
+    .right{
+        margin-left: 3px;
+    }
+
+    .box span {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+
+    main p {
+        margin-bottom: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+        line-height: 10px;
+    }
+
+    .end {
+        padding-bottom: 10px;
+    }
+
+    .table-example {
+        margin: 20px;
+        align-items: center;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    th:nth-child(1), td:nth-child(1),
+    th:nth-child(2), td:nth-child(2),
+    th:nth-child(3), td:nth-child(3) {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
 
     .logo{
         margin-left: 20px;
@@ -314,6 +422,7 @@ th:nth-child(3), td:nth-child(3) {
     .end {
         padding-bottom: 10px;
     }
+
 
     .table-example {
         margin: 20px;
