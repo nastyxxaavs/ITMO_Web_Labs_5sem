@@ -86,3 +86,16 @@
         }
     }
 }
+
+
+.stick{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background:#BFB6B0;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 300px;
+}

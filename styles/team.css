@@ -37,6 +37,7 @@ header{
     color: #8C8079;
 }
 
+
 .menu:hover {
     background: #262626;
     box-shadow: 0 15px 20px ;
@@ -140,3 +141,46 @@ main p{
 .end{
     padding-bottom: 20px;
 }
+
+
+.table-example {
+    position: relative;
+    align-content: center;
+    text-align: center;
+    margin: 40px 0 30px 600px;
+}
+
+th{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.table-info {
+    display: grid;
+    border-collapse: collapse;
+    color: #3a3a3a;
+}
+
+.table-info td, .table-info th {
+    border: 2px solid #595959;
+    padding: 8px;
+}
+
+.table-info tr:nth-child(odd) {
+    background-color: #8C8079;
+}
+
+
+@media (max-width: 1000px) {
+    .head {
+        height: 0px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {}
+
+
+@media screen and (min-width:501px) and (max-width:700px) {}
