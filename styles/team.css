@@ -183,13 +183,13 @@ th:nth-child(3), td:nth-child(3) {
 
 @media screen and (max-width: 600px) {
 
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
     .slogan {
-        position: relative;
-        font-size: 20px;
-        text-shadow: 3px 2px 8px #8C8079;
-        top: 50px;
-        text-align: center;
-        color: #8C8079;
+        display: none;
     }
 
     .menu {
@@ -215,19 +215,6 @@ th:nth-child(3), td:nth-child(3) {
         text-shadow: #8C8079 1px 1px 2px;
     }
 
-    main h1 span {
-        font-size: 70%;
-    }
-
-    main {
-        text-align: center;
-        color: #262626;
-    }
-
-    main ul {
-        list-style-type: none;
-        line-height: 10px;
-    }
 
     .box img {
         width: 80%;
@@ -237,14 +224,27 @@ th:nth-child(3), td:nth-child(3) {
     .left, .right {
         width: 50%;
         height: 60%;
+        margin-bottom: 10px;
+    }
+
+    .left{
+        margin-right: 3px;
+    }
+
+    .right{
+        margin-left: 3px;
     }
 
     main span {
         font-weight: bold;
+        font-size: 60%;
     }
 
     main p {
         margin-bottom: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+        line-height: 3px;
     }
 
     .end {
@@ -253,6 +253,7 @@ th:nth-child(3), td:nth-child(3) {
 
     .table-example {
         margin: 20px;
+        align-items: center;
     }
 
     th, td {
