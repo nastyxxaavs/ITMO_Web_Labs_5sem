@@ -27,11 +27,11 @@
     border: 5px solid #8C8079;
     border-radius: 20px;
     height: 100%;
-    width: 95%;
     font-size: 20px;
     margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 2;
     text-align: justify;
     padding: 15px 20px;
 }

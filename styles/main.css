@@ -25,6 +25,7 @@ header{
 
 .container{
     position: relative;
+    clear: both;
 }
 
 
@@ -64,6 +65,7 @@ header{
 
 .line {
     border-bottom: 2px solid #8C8079;
+    width: 100%;
 }
 
 
@@ -137,6 +139,7 @@ h2{
 
 
 #sidebar {
+    float: right;
     background-color: #8C8079;
     font-family: Times, Times New Roman, serif;
     font-style: italic;
@@ -149,14 +152,16 @@ h2{
     text-align: justify;
     padding: 15px 20px;
     margin-top: 10px;
-    margin-left: 1150px;
+    margin-bottom: 15px;
+    margin-right: 30px;
 }
 
 #sidebar cite{
-    padding-left: 150px;
+
     font-weight: 600;
 }
 .achievements{
+    clear: right;
     margin: 15px 20px 15px;
     color: #262626;
     font-family: Courier New, monospace;
@@ -284,6 +289,10 @@ footer li{
 
 @media screen and (max-width: 500px){
 
+    .line{
+        width: 100%;
+    }
+
     .menu{
         display: none;
         outline: none;
@@ -325,14 +334,17 @@ footer li{
         font-size: 30px;
     }
 
-    .we{
-        color: #262626;
-        font-family: Courier New, monospace;
-        font-size: 10px;
-        font-stretch: ultra-expanded;
-        font-weight: 500;
-        background-size: cover;
-        margin: 15px 20px 30px;
+
+    .contacts{
+        font-size: 14px;
+    }
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
     }
 
     #sidebar{
@@ -344,6 +356,15 @@ footer li{
     }
 
     main p {
+        font-size: 16px;
+    }
+
+    .achievements ol{
+        font-size: 16px;
+    }
+
+    .pleasure li{
+        font-size: 16px;
     }
 
 
@@ -369,52 +390,19 @@ footer li{
         display: none;
     }
 
-
-    .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    main h1 {
-        font-size: 35px;
-        text-align: center;
-        margin: 10px 10px 20px;
-        text-shadow: #8C8079 1px 1px 2px;
-    }
-
-
-
-
-    main p {
-        margin-bottom: 10px;
-        padding-left: 3px;
-        padding-right: 3px;
-        line-height: 10px;
-    }
-
-    .end {
-        padding-bottom: 10px;
-    }
-
-    .table-example {
-        margin: 20px;
-        align-items: center;
-    }
-
-    th, td {
+    .contacts{
         font-size: 14px;
-        padding: 6px;
     }
 
-    th:nth-child(1), td:nth-child(1),
-    th:nth-child(2), td:nth-child(2),
-    th:nth-child(3), td:nth-child(3) {
-        width: auto;
+
+    .address{
+        margin-right: 10px;
     }
+
+    .email{
+        margin-right: 10px;
+    }
+
 }
 
 
@@ -424,64 +412,34 @@ footer li{
         display: none;
     }
 
-    .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        margin-bottom: 20px;
+    #sidebar{
+        display: none;
     }
 
-    main h1 {
-        font-size: 35px;
-        text-align: center;
-        margin: 10px 10px 20px;
-        text-shadow: #8C8079 1px 1px 2px;
+    .help h3{
+        margin-left: 65px;
+        font-size: 16px;
     }
 
 
-    .box img {
-        width: 50%;
-        height: auto;
-    }
-
-    .left, .right {
-        width: 40%;
-        height: 40%;
-        margin-bottom: 10px;
-    }
-
-    .box span {
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    main p {
-        margin-bottom: 8px;
-        padding-left: 3px;
-        padding-right: 3px;
-        line-height: 10px;
-    }
-
-    .end {
-        padding-bottom: 10px;
+    .contacts h3{
+        font-size: 16px;
     }
 
 
-    .table-example {
-        margin: 20px;
-        align-items: center;
-    }
-
-    th, td {
+    .contacts{
         font-size: 14px;
-        padding: 6px;
     }
 
-    th:nth-child(1), td:nth-child(1),
-    th:nth-child(2), td:nth-child(2),
-    th:nth-child(3), td:nth-child(3) {
-        width: auto;
+
+    .address{
+        margin-right: 10px;
     }
+
+    .email{
+        margin-right: 10px;
+    }
+
+
 }
+
