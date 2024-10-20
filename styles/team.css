@@ -19,7 +19,6 @@ header{
 }
 
 .link {
-    margin-top: 100px;
     text-decoration: none;
 }
 
@@ -143,29 +142,38 @@ main p{
 }
 
 
+
 .table-example {
     position: relative;
     align-content: center;
     text-align: center;
-    margin: 40px 0 30px 600px;
-}
-
-th{
-    position: relative;
-    align-content: center;
-    text-align: center;
-    padding-left: 15px;
+    margin: 40px auto;
+    max-width: 80%;
 }
 
 .table-info {
-    display: grid;
+    width: 100%;
     border-collapse: collapse;
     color: #3a3a3a;
 }
 
-.table-info td, .table-info th {
+th, td {
     border: 2px solid #595959;
     padding: 8px;
+    text-align: center;
+}
+
+
+th:nth-child(1), td:nth-child(1) {
+    width: 30%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 40%;
 }
 
 .table-info tr:nth-child(odd) {
@@ -173,14 +181,150 @@ th{
 }
 
 
-@media (max-width: 1000px) {
-    .head {
-        height: 0px;
-        padding: 0 10px;
+@media screen and (max-width: 600px) {
+
+    .slogan {
+        position: relative;
+        font-size: 20px;
+        text-shadow: 3px 2px 8px #8C8079;
+        top: 50px;
+        text-align: center;
+        color: #8C8079;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    main h1 {
+        font-size: 150%;
+        text-align: center;
+        color: #595959;
+        font-family: Courier New, monospace;
+        font-weight: bold;
+        margin: 10px 10px 20px;
+        text-shadow: #8C8079 1px 1px 2px;
+    }
+
+    main h1 span {
+        font-size: 70%;
+    }
+
+    main {
+        text-align: center;
+        color: #262626;
+    }
+
+    main ul {
+        list-style-type: none;
+        line-height: 10px;
+    }
+
+    .box img {
+        width: 80%;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 50%;
+        height: 60%;
+    }
+
+    main span {
+        font-weight: bold;
+    }
+
+    main p {
+        margin-bottom: 5px;
+    }
+
+    .end {
+        padding-bottom: 10px;
+    }
+
+    .table-example {
+        margin: 20px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    th:nth-child(1), td:nth-child(1),
+    th:nth-child(2), td:nth-child(2),
+    th:nth-child(3), td:nth-child(3) {
+        width: auto;
     }
 }
 
-@media screen and (max-width: 320px) {}
 
 
-@media screen and (min-width:501px) and (max-width:700px) {}
+@media screen and (min-width: 600px) and (max-width:  800px) {
+    .slogan {
+        font-size: 22px;
+        top: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    main h1 {
+        font-size: 200%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .box img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .slogan {
+        font-size: 24px;
+        top: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    main h1 {
+        font-size: 220%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .box img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slogan {
+        font-size: 26px;
+        top: 90px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    main h1 {
+        font-size: 250%;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .box img {
+        width: 30%;
+        height: auto;
+    }
+}
