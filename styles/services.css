@@ -473,6 +473,24 @@ footer li{
 
 }
 
+@media screen and (min-width: 600px) and (max-width: 750px) {
+
+
+    .logo{
+        height: 250px;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .logo img{
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
 @media screen and  (max-width: 950px){
 
 
