@@ -361,10 +361,12 @@ footer li{
 
     .achievements ol{
         font-size: 16px;
+        font-weight: 250;
     }
 
     .pleasure li{
         font-size: 16px;
+        font-weight: 250;
     }
 
 
@@ -372,6 +374,10 @@ footer li{
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
+
+    .stick{
+        width: 100%;
+    }
 
     .logo{
         margin-left: 20px;
@@ -403,11 +409,24 @@ footer li{
         margin-right: 10px;
     }
 
+    .achievements ol{
+        font-weight: 250;
+    }
+
+    .pleasure li{
+        font-weight: 250;
+    }
+
 }
 
 
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .stick{
+        width: 100%;
+    }
+
     .slogan {
         display: none;
     }
@@ -438,6 +457,14 @@ footer li{
 
     .email{
         margin-right: 10px;
+    }
+
+    .achievements ol{
+        font-weight: 250;
+    }
+
+    .pleasure li{
+        font-weight: 250;
     }
 
 }
