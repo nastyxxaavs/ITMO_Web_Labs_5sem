@@ -424,7 +424,8 @@ footer li{
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
 
-    .stick{
+
+    header{
         width: 100%;
     }
 
@@ -474,7 +475,8 @@ footer li{
 
 @media screen and  (max-width: 950px){
 
-    .stick{
+
+    header{
         width: 100%;
     }
 
@@ -485,7 +487,8 @@ footer li{
 
 @media screen and (min-width: 600px) and (max-width: 1100px) {
 
-    .stick{
+
+    header{
         width: 100%;
     }
 

@@ -293,7 +293,8 @@ th:nth-child(3), td:nth-child(3) {
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
 
-    .stick{
+
+    header{
         width: 100%;
     }
 
@@ -379,7 +380,8 @@ th:nth-child(3), td:nth-child(3) {
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
-    .stick{
+
+    header{
         width: 100%;
     }
 
