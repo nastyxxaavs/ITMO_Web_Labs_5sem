@@ -298,11 +298,6 @@ th:nth-child(3), td:nth-child(3) {
 
 @media screen and (min-width: 500px) and (max-width: 600px) {
 
-
-    header{
-        width: 100%;
-    }
-
     .logo{
         margin-left: 20px;
         align-items: center;
@@ -382,13 +377,9 @@ th:nth-child(3), td:nth-child(3) {
 }
 
 
-
 @media screen and (min-width: 600px) and (max-width: 1024px) {
 
 
-    header{
-        width: 100%;
-    }
 
     .slogan {
         display: none;
