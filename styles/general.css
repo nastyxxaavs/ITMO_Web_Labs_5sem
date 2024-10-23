@@ -27,12 +27,11 @@
     border: 5px solid #8C8079;
     border-radius: 20px;
     height: 100%;
-    width: 95%;
-    font-size: 100%;
-    margin-right: -200px;
+    font-size: 20px;
     margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 2;
     text-align: justify;
     padding: 15px 20px;
 }
@@ -86,4 +85,36 @@
             width: 100%;
         }
     }
+}
+
+
+.stick{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background:#BFB6B0;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 300px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+
+
+    .stick{
+        margin-bottom: 0;
+        position: relative;
+        top:0;
+        width: 100%;
+        background:#BFB6B0;
+        z-index: 1000;
+    }
+
+
+    main{
+        margin-top: 0;
+    }
+
 }
