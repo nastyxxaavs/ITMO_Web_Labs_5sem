@@ -38,9 +38,6 @@ header{
 
 
 .menu:hover {
-    background: #262626;
-    box-shadow: 0 15px 20px ;
-    color: white;
     transform: translateY(-7px);
 }
 
@@ -60,8 +57,8 @@ header{
 
 .menu a:hover {
     padding: 10px 18px;
-    border-radius: 2px;
-    background-color: whitesmoke;
+    border-radius: 45px;
+    background-color: #454545;
 }
 
 .line {
