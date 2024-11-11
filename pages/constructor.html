@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор расписания</title>
+    <link href="../styles/constructor.css" rel="stylesheet" />
+</head>
+<body>
+<script src="../src/constructor.js"></script>
+<div class="schedule">
+<h1>Конструктор расписания</h1>
+    <form id="scheduleForm">
+        <label for="days">Количество дней:</label>
+        <select id="days">
+            <option value="5">5 дней</option>
+            <option value="6">6 дней</option>
+        </select>
+
+        <label for="lessons">Максимальное количество занятий:</label>
+        <input type="number" id="lessons" min="1" max="10" value="5">
+
+        <label for="language">Язык:</label>
+        <select id="language">
+            <option value="ru">Русский</option>
+            <option value="en">Английский</option>
+        </select>
+
+        <button type="submit">Сгенерировать расписание</button>
+    </form>
+</div>
+
+<div id="resultContainer"></div>
+</body>
+</html>
