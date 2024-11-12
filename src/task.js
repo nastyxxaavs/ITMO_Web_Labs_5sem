@@ -1,55 +1,67 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('scheduleForm');
-    const resultContainer = document.getElementById('resultContainer');
+document.addEventListener('DOMContentLoaded', function() {
+    const schedule = document.getElementById('taskForm');
+    const resultContainer = document.getElementById('resContainer');
+    let table;
 
-    // Загрузка параметров из localStorage
-    loadParameters();
+    // Загрузка сохраненных параметров из LocalStorage
+    if (localStorage.getItem('taskParams')) {
+        const params = JSON.parse(localStorage.getItem('taskParams'));
+        document.getElementById('days').value = params.days;
+        document.getElementById('difficult').value = params.lessons;
+        document.getElementById('taskInput').value = params.language;
+    }
 
-    form.addEventListener('submit', function(event) {
+    schedule.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const days = document.getElementById('days').value;
-        const lessons = document.getElementById('lessons').value;
-        const language = document.getElementById('language').value;
+        const lessons = document.getElementById('difficult').value;
+        const language = document.getElementById('taskInput').value;
 
-        saveParameters(days, lessons, language);
-        generateSchedule(days, lessons, language);
+        // Сохраняем параметры в LocalStorage
+        const scheduleParams = {
+            days,
+            lessons,
+            language
+        };
+        localStorage.setItem('taskParams', JSON.stringify(scheduleParams));
+
+        addRowsToSchedule(days, lessons, language);
     });
 
-    function generateSchedule(days, lessons, language) {
-        let table = '<table ="1"><tr><th>День</th>';
+    function addRowsToSchedule(days, lessons, language) {
+        if (!table) {
+            table = document.createElement('table');
+            table.classList.add('schedule-table');
 
-        for (let i = 1; i <= lessons; i++) {
-            table += `<th>Занятие ${i}</th>`;
+
+            const headerRow = document.createElement('tr');
+            const headers = ['Дедлайн', 'Сложность', 'Задача'];
+            headers.forEach(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+            resultContainer.appendChild(table);
         }
 
-        table += '</tr>';
+        for (let i = 0; i < days; i++) {
+            const row = document.createElement('tr');
+                const dayCell = document.createElement('td');
+                dayCell.textContent = table.rows.length;
+                row.appendChild(dayCell);
 
-        for (let d = 1; d <= days; d++) {
-            table += `<tr><td>День ${d}</td>`;
-                for (let i = 1; i <= lessons; i++) {
-                    table += `<td>Занятие ${i} (${language})</td>`;
-                }
-                table += '</tr>';
+                const lessonCell = document.createElement('td');
+                lessonCell.textContent = lessons;
+                row.appendChild(lessonCell);
+
+
+                const languageCell = document.createElement('td');
+                languageCell.textContent = language;
+                row.appendChild(languageCell);
+
+                table.appendChild(row);
         }
-
-        table += '</table>';
-        resultContainer.innerHTML = table;
-    }
-
-    function saveParameters(days, lessons, language) {
-        localStorage.setItem('days', days);
-        localStorage.setItem('lessons', lessons);
-        localStorage.setItem('language', language);
-    }
-
-    function loadParameters() {
-        const days = localStorage.getItem('days') || '5';
-        const lessons = localStorage.getItem('lessons') || '5';
-        const language = localStorage.getItem('language') || 'ru';
-
-        document.getElementById('days').value = days;
-        document.getElementById('lessons').value = lessons;
-        document.getElementById('language').value = language;
     }
 });

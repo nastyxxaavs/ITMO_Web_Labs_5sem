@@ -31,31 +31,26 @@
 </div>
 <main>
     <div class="task">
-    <div id="taskContainer"></div>
         <h1>Менеджер задач</h1>
         <form id="taskForm">
             <label for="days">Дедлайн:</label>
             <select id="days">
-                <option value="5">2 дней</option>
-                <option value="5">3 дней</option>
-                <option value="5">4 дней</option>
+                <option value="2">2 дней</option>
+                <option value="3">3 дней</option>
+                <option value="4">4 дней</option>
                 <option value="5">5 дней</option>
                 <option value="6">6 дней</option>
             </select>
 
-            <label for="lessons">Сложность:</label>
-            <input type="number" id="lessons" min="1" max="10" value="5">
+            <label for="difficult">Сложность:</label>
+            <input type="number" id="difficult" min="1" max="10" value="5">
 
             <label for="taskInput">Задача:</label>
-            <input type="text" id="taskInput" name="task" placeholder="Введите задачу" required>
-
-            <button type="submit">Добавить</button>
-            <button type="button" id="saveTasks">Сохранить</button>
-            <button type="button" id="loadTasks">Сгенерировать доску задач</button>
+            <input type="text" id="taskInput" placeholder="Введите задачу" required>
+            <button type="submit" >Сгенерировать доску задач</button>
         </form>
-        <div id="resultContainer"></div>
+        <div id="resContainer"></div>
     </div>
 </main>
-
 </body>
 </html>
