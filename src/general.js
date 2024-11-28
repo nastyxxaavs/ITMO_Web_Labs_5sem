@@ -12,16 +12,6 @@ window.onload = setActiveMenuItem;
 
 
 (function() {
-    let startTime = performance.now();
-
-    window.addEventListener('load', function() {
-        let endTime = performance.now();
-        let loadTime = (endTime - startTime).toFixed(2);
-        document.getElementById('loadingStats').innerText = 'Page load time is  '+ loadTime+ '  milliseconds';
-    });
-})();
-
-(function() {
     const logoImage = document.getElementById('logoImage');
 
     logoImage.addEventListener('mouseover', function() {
