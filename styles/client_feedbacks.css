@@ -93,6 +93,15 @@ main h1{
     margin-bottom: 10px;
 }
 
+#container {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
 .preloader {
     display: flex;
     justify-content: center;
@@ -128,6 +137,40 @@ main h1{
     background-size: cover;
 }
 
+.comments{
+  text-align: center;
+    margin-top: 20px;
+}
+
+.comment-card {
+    align-items: center;
+    background-color: #8C8079;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 1200px;
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-size: 30px;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+}
+
+.comment-author {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comment-email {
+    font-size: 17px;
+    color:  #BFB6B0 ;
+}
+
+.comment-body {
+    font-size: 15px;
+    margin-top: 10px;
+}
 
 
 
