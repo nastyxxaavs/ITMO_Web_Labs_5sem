@@ -148,3 +148,69 @@ main{
 .rotate {
     transform: rotate(360deg);
 }
+
+
+.jBox-container{
+    background-color: #595959;
+    color: #595959;
+}
+
+.jBox-content {
+    color: #262626;
+    font-family: Courier New, monospace;
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #BFB6B0;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.jBox-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8C8079;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-size: 14px;
+    color: #373737;
+}
+
+form input[type="email"] {
+padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"] {
+    padding: 2px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #595959;
+    color: #BFB6B0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #595959;
+}

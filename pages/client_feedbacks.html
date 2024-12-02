@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Авсюкевич Анастасия">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о наших услугах</title>
+    <link rel="stylesheet" href="../styles/client_feedbacks.css">
+    <link href="../styles/general.css" rel="stylesheet" />
+</head>
+<body>
+<script src="../src/promise.js"></script>
+<script defer src="../src/general.js"></script>
+<div class="stick">
+    <header>
+        <div class="logo">
+            <a href="../pages/main.html">
+                <img src="../pics/logo_new.png" alt="Логотип" id="logoImage">
+            </a>
+        </div>
+        <div class="slogan"> <h1> with us - you are in law </h1> </div>
+        <div class="menu">
+            <ul>
+                <li><a class="link" href="../pages/main.html">Главная</a></li>
+                <li><a class="link" href="../pages/services.html">Услуги</a></li>
+                <li><a class="link" href="../pages/team.html">Команда</a></li>
+                <li><a class="link" href="../pages/client_feedbacks.html">Отзывы</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="line"></div>
+</div>
+<main>
+    <h1>Список отзывов</h1>
+    <div class="container">
+        <div id="preloader" class="preloader">
+            <img src="../pics/load.gif" alt="gif">
+            <p>Загрузка...</p>
+        </div>
+        <div id="comment-list" class="comments"></div>
+    </div>
+</main>
+</body>
+</html>
