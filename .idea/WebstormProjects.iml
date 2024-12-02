@@ -9,5 +9,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="outline-control" level="application" />
+    <orderEntry type="library" name="jquery.menu-aim" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="jBox.all" level="application" />
   </component>
 </module>
