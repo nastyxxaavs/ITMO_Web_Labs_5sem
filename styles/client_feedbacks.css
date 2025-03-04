@@ -26,6 +26,7 @@ header{
 .container{
     position: relative;
     clear: both;
+    padding-bottom: 10px;
 }
 
 

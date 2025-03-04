@@ -96,6 +96,75 @@ main{
     margin-top: 300px;
 }
 
+
+.register-message{
+    margin: 10px 30px 20px;
+}
+
+.register-message h3{
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    font-size: 22px;
+    text-align: center;
+}
+
+.register-message input{
+    margin-left: 562px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.register-message button{
+    margin-left: 565px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+
+
+.welcome-message{
+    margin: 8px 30px 30px;
+}
+
+.welcome-message h3{
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    font-size: 22px;
+    text-align: center;
+}
+
+.welcome-message p{
+    text-align: center;
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1380;
+    background-size: cover;
+    font-size: 21px;
+}
+
+.welcome-message a{
+    text-align: center;
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1380;
+    background-size: cover;
+    font-size: 21px;
+    margin-left: 685px;
+}
+
+
 @media screen and (min-width: 600px) and (max-width: 750px) {
 
 
