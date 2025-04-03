@@ -304,6 +304,12 @@ footer li{
     width: 20%;
 }
 
+.register-message button{
+    margin-left: 585px;
+    margin-right: 20px;
+    width: 20%;
+}
+
 @media screen and (max-width: 500px){
 
     .menu{

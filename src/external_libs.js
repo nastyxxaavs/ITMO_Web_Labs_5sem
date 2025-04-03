@@ -1,8 +1,4 @@
-//  Код создает и управляет простым модальным окном с формой, используя библиотеку jBox
-//  для удобного отображения и управления состоянием формы
-
-
-// Создаем новый экземпляр модального окна с помощью jBox
+// Создаем экземпляр модального окна с помощью jBox
 let myModal = new jBox('Modal', {
     width: 600,
     height: 260,
@@ -17,53 +13,66 @@ let myModal = new jBox('Modal', {
     <button type="submit">Отправить</button>
     </form>`,
     closeButton: 'title',
-    // Функция, которая будет выполнена после завершения открытия модального окна
     completeOpening: function () {
-        // Устанавливаем фокус на поле ввода email
         document.getElementById('emailInput').focus();
-        // Устанавливаем фокус на поле ввода имени (это действие будет выполнено сразу после фокуса на email)
         document.getElementById('nameInput').focus();
     },
 });
 
 let interval = 4000;
-// Проверяем, была ли отправлена форма с email, используя sessionStorage
+
 let emailSubmitted = sessionStorage.getItem('emailSubmitted') ?? false;
-// Аналогично для имени
+
 let nameSubmitted = sessionStorage.getItem('nameSubmitted') ?? false;
 
 
 // Функция для показа модального окна
 function openForm() {
-    // Если форма еще не была отправлена, открываем модальное окно
     if (!emailSubmitted && !nameSubmitted) {
         myModal.open();
 
-        interval *= 2.5;
+        interval *= 5.5;
 
-        // Рекурсивно вызываем функцию showModal через указанный интервал
         setTimeout(openForm, interval);
     }
 }
 
 setTimeout(openForm, interval);
 
-document.addEventListener('submit', (event) => {
+document.addEventListener('submit', async (event) => {
     if (event.target.id === 'subscriptionForm') {
-        event.preventDefault(); // Отменяем стандартное поведение формы (перезагрузка страницы)
-        // Устанавливаем флаги, что форма была отправлена
-        emailSubmitted = true;
-        nameSubmitted = true;
-        sessionStorage.setItem('emailSubmitted', JSON.stringify(emailSubmitted))
-        sessionStorage.setItem('nameSubmitted', JSON.stringify(nameSubmitted))
+        event.preventDefault();
 
-        // Меняем содержимое модального окна после отправки формы
-        myModal.setContent(`
-            <i>Ваша заявка принята! Ожидайте письма от нашего менеджера<i>
+        const name = document.getElementById('nameInput').value;
+        const email = document.getElementById('emailInput').value;
+
+        const data = { name, email };
+
+        try {
+            const response = await fetch('http://localhost:8082/form-add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                myModal.setContent(`
+            <i>Ваша заявка принята! Ожидайте письма от нашего менеджера</i>
         `);
+            } else {
+                myModal.setContent(`
+            <i>Ошибка при отправке заявки</i>
+        `);
+            }
+        } catch (error) {
+            console.error('Ошибка:', error);
+            myModal.setContent(`
+            <i>Ошибка при отправке заявки</i>
+        `);
+        }
 
-
-        // Закрываем модальное окно через 2 секунды после отправки формы
         setTimeout(() => {
             myModal.close();
         }, 2000);

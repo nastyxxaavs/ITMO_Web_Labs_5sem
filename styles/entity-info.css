@@ -1,0 +1,33 @@
+
+.entity-info{
+    margin: 10px 30px 20px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background: #BFB6B0 ;
+    color: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.entity-info p, a{
+    color: #595959;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 2880;
+    background-size: cover;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.entity-info a{
+    margin-left: 615px;
+}

@@ -1,0 +1,50 @@
+
+.entity-add{
+    margin: 10px 30px 20px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background: #BFB6B0 ;
+    color: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.entity-add input, textarea{
+    margin-left: 22px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+
+
+.entity-add button{
+    padding-top: 30px;
+    margin-left: 595px;
+    margin-right: 20px;
+    width: 20%;
+}
+.entity-add select{
+    margin-left: 515px;
+    margin-right: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.entity-add label{
+    color: #595959;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 2880;
+    background-size: cover;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+}

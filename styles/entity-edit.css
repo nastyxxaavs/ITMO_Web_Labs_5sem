@@ -1,0 +1,67 @@
+
+.entity-edit{
+    margin: 10px 30px 20px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background: #BFB6B0 ;
+    color: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.entity-edit h1{
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    font-size: 22px;
+    text-align: center;
+}
+
+.entity-edit input{
+    margin-top: 5px;
+    margin-left: 22px;
+    margin-right: 20px;
+    width: 20%;
+}
+
+.entity-edit button{
+    margin-left: 595px;
+    margin-right: 20px;
+    width: 20%;
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.entity-edit label{
+    color: #595959;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 2880;
+    background-size: cover;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+.entity-edit select{
+    margin-left: 515px;
+    margin-right: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+}

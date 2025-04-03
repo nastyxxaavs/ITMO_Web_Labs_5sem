@@ -1,3 +1,173 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.link {
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+    clear: both;
+}
+
+
+.slogan{
+    position: relative;
+    font-size: 26px;
+    text-shadow: 5px 3px 13px #8C8079;
+    top: 90px;
+    text-align: center;
+    color: #8C8079;
+}
+
+.menu:hover {
+    transform: translateY(-7px);
+}
+
+.li {
+    display: block;
+    padding: 10px;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #8C8079;
+}
+
+.menu a:hover {
+    padding: 10px 18px;
+    border-radius: 45px;
+    background-color: #454545;
+}
+
+.line {
+    margin-top: 15px;
+    border-bottom: 2px solid #8C8079;
+    width: 100%;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer h3{
+    color: #595959;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 880;
+    background-size: cover;
+    font-size: 18px;
+    text-shadow: #595959 1px 1px 1px;
+}
+
+.help{
+    float:right;
+    margin-right: 60px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.help h3{
+    margin-left: 10px;
+}
+
+.contacts h3{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    float: left;
+    margin-left: 25px;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.address img{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.address li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
+.address a{
+    text-decoration: none;
+}
+
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+
+.phone img{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.phone li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+}
+
+.email img{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.email li{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+
+
+.email a{
+    text-decoration: none;
+}
+
+footer li{
+    font-family: Courier New, monospace;
+    font-weight: 600;
+    color: #474747;
+    text-decoration: none;
+}
+
+
 .menu {
     list-style-type: none;
     padding: 0;
@@ -152,21 +322,119 @@ main{
     font-size: 21px;
 }
 
-.welcome-message a{
-    text-align: center;
-    color: #595959;
-    text-shadow: #595959 1px 1px 1px;
-    font-family: Courier New, monospace;
-    font-style: normal;
-    font-weight: 1380;
-    background-size: cover;
-    font-size: 21px;
-    margin-left: 685px;
+.welcome-message button{
+    margin-left: 595px;
+    margin-right: 20px;
+    width: 20%;
 }
 
+@media screen and (max-width: 500px){
 
+    .line{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+    .menu ul{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+    .menu li{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+
+    .menu a{
+        display: none;
+        outline: none;
+        border: 0;
+        background: transparent;
+    }
+
+
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+
+    .contacts{
+        font-size: 14px;
+    }
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
+    }
+
+
+    .help{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .help{
+        display: none;
+    }
+
+    .contacts{
+        font-size: 14px;
+    }
+
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
+    }
+
+}
 @media screen and (min-width: 600px) and (max-width: 750px) {
 
+    .logo{
+        height: 250px;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .logo img{
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
 
     .stick{
         margin-bottom: 0;
@@ -180,6 +448,41 @@ main{
 
     main{
         margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header{
+        width: 100%;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .help h3{
+        margin-left: 65px;
+        font-size: 16px;
+    }
+
+
+    .contacts h3{
+        font-size: 16px;
+    }
+
+
+    .contacts{
+        font-size: 14px;
+    }
+
+
+    .address{
+        margin-right: 10px;
+    }
+
+    .email{
+        margin-right: 10px;
     }
 
 }
