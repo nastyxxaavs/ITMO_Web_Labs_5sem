@@ -65,3 +65,30 @@ html{
     width: 30%;
     margin-bottom: 20px;
 }
+
+.entity-delete button{
+    margin-left: 595px;
+    margin-right: 20px;
+    width: 20%;
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    text-align: center;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.entity-delete h1{
+    color: #595959;
+    text-shadow: #595959 1px 1px 1px;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 1080;
+    background-size: cover;
+    font-size: 22px;
+    text-align: center;
+}
